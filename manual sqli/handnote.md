@@ -1,64 +1,214 @@
+# Manual SQL Injection Notes
 
-!!!!! only for learning and educational purposes!!!   personal note
+> ⚠️ **Disclaimer**
+>
+> This document is intended **only for educational purposes** and should be used **only on systems you own or have explicit permission to test**, such as local labs, CTFs, or intentionally vulnerable applications (DVWA, OWASP Juice Shop, WebGoat, etc.).
 
+---
 
-Manual sqli 
+# Useful Browser Extensions
 
-[https://chromewebstore.google.com/detail/link-gopher/bpjdkodgnbfalgghnbeggfbfjpcfamkf](https://chromewebstore.google.com/detail/link-gopher/bpjdkodgnbfalgghnbeggfbfjpcfamkf)
+## Google Chrome
+https://chromewebstore.google.com/detail/link-gopher/bpjdkodgnbfalgghnbeggfbfjpcfamkf
 
+## Mozilla Firefox
 https://addons.mozilla.org/en-US/firefox/addon/link-gopher/
 
-url/uri 
+---
 
-Uniform Resource Locator/ Uniform Resource Identifier
+# URL and URI
 
-[https://www.test.com/new/file.php?id=4](https://www.test.com/new/file.php?id=4)
+**URL**
+- Uniform Resource Locator
 
-[http://www.johnxxiii.co.in/php/gallary.php?id=1](http://www.johnxxiii.co.in/php/gallary.php?id=1)
+**URI**
+- Uniform Resource Identifier
 
-[http://www.johnxxiii.co.in/php/photogallary.php](http://www.johnxxiii.co.in/php/photogallary.php)
+---
 
-[https://](http://www.johnxxiii.co.in/php/gallary.php?id=1)  / http://
+# URL Structure
 
-[http://test.com/admin](http://test.com/admin)
+Example:
 
-[https://test.com/admin](http://test.com/admin)
+```
+https://example.com/products/view.php?id=25
+```
 
+Breakdown:
 
+```
+https://        -> Protocol
+example.com     -> Domain
+/products/      -> Directory
+view.php        -> File
+?id=25          -> Query Parameter
+```
 
-[Www.](http://www.johnxxiii.co.in/php/gallary.php?id=1)
+Another Example
 
-[johnxxiii.co.in/php/gallary.php](http://www.johnxxiii.co.in/php/gallary.php?id=1)
+```
+https://example.com/search.php?category=books&page=2
+```
 
-Tld 
+Query Parameters
 
-dhjkhjkd[\=](http://www.johnxxiii.co.in/php/gallary.php?id=1)hshkujwerwer
+```
+category = books
+page = 2
+```
 
-? &
+Multiple Parameters
 
-[Untitled document \- Google Docs](https://docs.google.com/document/d/1ZNrOCCClH29Bw07P3SEypEJ9IDSYeeA44Z1sD_MFCIc/edit?tab=t.0) 
+```
+?
+&
+=
+```
 
-[https://test.com/test/php/new.php](https://test.com/test/php/new.php?aws=65&aws=alpha&alpha=aws65.html&c=71&arena=aws.php&a=YXJlbmEgd2ViIHNlY3VyaXR5IA==)
+Example
 
-[?](https://test.com/test/php/new.php?aws=65&aws=alpha&alpha=aws65.html&c=71&arena=aws.php&a=YXJlbmEgd2ViIHNlY3VyaXR5IA==) &
+```
+https://example.com/search.php?category=books&page=2&sort=price
+```
 
-[aws=65,alpha](https://test.com/test/php/new.php?aws=65&aws=alpha&alpha=aws65.html&c=71&arena=aws.php&a=YXJlbmEgd2ViIHNlY3VyaXR5IA==)  
-[alpha=aws65.html](https://test.com/test/php/new.php?aws=65&aws=alpha&alpha=aws65.html&c=71&arena=aws.php&a=YXJlbmEgd2ViIHNlY3VyaXR5IA==)  
-[c=71](https://test.com/test/php/new.php?aws=65&aws=alpha&alpha=aws65.html&c=71&arena=aws.php&a=YXJlbmEgd2ViIHNlY3VyaXR5IA==)  
-[arena=aws.php](https://test.com/test/php/new.php?aws=65&aws=alpha&alpha=aws65.html&c=71&arena=aws.php&a=YXJlbmEgd2ViIHNlY3VyaXR5IA==)  
-[a=YXJlbmEgd2ViIHNlY3VyaXR5IA==](https://test.com/test/php/new.php?aws=65&aws=alpha&alpha=aws65.html&c=71&arena=aws.php&a=YXJlbmEgd2ViIHNlY3VyaXR5IA==)
+---
 
-Aws peram alpha value 
+# Common Parameter Examples
 
-5step of manual sqli 
+```
+?id=25
+?user=admin
+?page=2
+?category=books
+?product=15
+?article=10
+?news=5
+?lang=en
+?file=readme
+```
 
-1st find dynamic url with peram and value (id=25)
+---
 
-2nd error finding or vuln finding (( ‘,”,’),/,\\.\[\]))
+# Base64 Example
 
-3rd total column finding 1000 must be 1
+```
+YXJlbmEgd2ViIHNlY3VyaXR5IA==
+```
 
-4th vuln column finding 
+Some applications encode values before sending them to the server.
 
-5h dump he database   
-Dios \= dump in one shot   
+---
+
+# Typical Learning Workflow
+
+## Step 1 — Identify User Input
+
+Locate pages that accept user-controlled input.
+
+Example:
+
+```
+https://example.com/product.php?id=25
+```
+
+Understand which parts of the URL are controlled by the user.
+
+---
+
+## Step 2 — Understand Input Handling
+
+Learn how applications process URL parameters and why improper validation can create security risks.
+
+Topics:
+
+- User Input
+- Server-side Processing
+- SQL Queries
+- Input Validation
+
+---
+
+## Step 3 — Learn Database Interaction
+
+Understand how web applications communicate with databases.
+
+Topics:
+
+- SELECT
+- INSERT
+- UPDATE
+- DELETE
+
+Understand the role of SQL queries inside applications.
+
+---
+
+## Step 4 — Learn Secure Development
+
+Modern applications should use:
+
+- Prepared Statements
+- Parameterized Queries
+- ORM Frameworks
+- Input Validation
+- Output Encoding
+- Least Privilege Principle
+
+---
+
+## Step 5 — Practice Responsibly
+
+Practice only in:
+
+- DVWA
+- OWASP Juice Shop
+- WebGoat
+- PortSwigger Web Security Academy
+- Capture The Flag (CTF) Labs
+
+Never test systems without explicit authorization.
+
+---
+
+# Useful Terms
+
+```
+GET
+POST
+Cookie
+Header
+HTTP
+HTTPS
+Request
+Response
+Status Code
+Session
+Authentication
+Authorization
+```
+
+---
+
+# Recommended Labs
+
+- PortSwigger Web Security Academy
+- DVWA
+- OWASP Juice Shop
+- WebGoat
+- bWAPP
+
+---
+
+# References
+
+- OWASP Top 10
+- PortSwigger Academy
+- OWASP Cheat Sheet Series
+
+---
+
+# Reminder
+
+Always follow responsible disclosure and obtain proper authorization before performing any security testing.
+
+This repository exists to improve secure software development and defensive security knowledge.
