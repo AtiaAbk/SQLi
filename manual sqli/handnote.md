@@ -90,3 +90,27 @@ Example:
 | 2  | Bob   | ICE        |
 | 3  | Carol | EEE        |
 
+Think of a database as a digital filing cabinet.
+
+---
+
+# What is DBMS?
+
+DBMS = Database Management System
+
+It is software used to create, manage, and maintain databases.
+
+Popular DBMS:
+
+| Database | Company |
+|------------|---------------|
+| MySQL | Oracle |
+| PostgreSQL | PostgreSQL |
+| Microsoft SQL Server | Microsoft |
+| Oracle Database | Oracle |
+| SQLite | SQLite |
+
+---
+
+# Client-Server Architecture
+
