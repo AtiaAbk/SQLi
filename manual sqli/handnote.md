@@ -22,10 +22,6 @@ Uniform Resource Locator/ Uniform Resource Identifier
 
 [http://test.com/admin](http://test.com/admin)
 
-User: admin
-
-Pass: 123
-
 [https://test.com/admin](http://test.com/admin)
 
 User: dsfhujksdfhuksdhjk
