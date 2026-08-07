@@ -191,7 +191,7 @@ This repository builds on and points to the incredible work of the **OWASP Found
 
 ### 👤 Author
 
-**Atia** — Cybersecurity & Systems Learner
+**Atia Sanjida**  
 
 [![GitHub](https://img.shields.io/badge/GitHub-AtiaAbk-181717?style=flat&logo=github)](https://github.com/AtiaAbk)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/atia-sanjida-085947233/)
