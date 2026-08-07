@@ -17,7 +17,7 @@ No attack tooling. No exploitation of real systems. Just deep understanding, sec
 
 [Roadmap](#-learning-roadmap) • [Repository Map](#-repository-map) • [Labs](#-practice-labs-legal-only) • [Cheat Sheets](#-cheat-sheets) • [Contributing](CONTRIBUTING.md)
 
-**Maintained by [AtiaAbk](https://github.com/AtiaAbk)**
+**Maintained by [Atia Sanjida](https://github.com/AtiaAbk)**
 
 </div>
 
