@@ -84,4 +84,9 @@ SQL allows applications to:
 A database is an organized collection of information.
 
 Example:
+| ID | Name  | Department |
+| -- | ----- | ---------- |
+| 1  | Alice | CSE        |
+| 2  | Bob   | ICE        |
+| 3  | Carol | EEE        |
 
