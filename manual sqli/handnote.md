@@ -94,6 +94,11 @@ Think of a database as a digital filing cabinet.
 
 ---
 
+
+Think of a database as a digital filing cabinet.
+
+---
+
 # What is DBMS?
 
 DBMS = Database Management System
@@ -113,40 +118,239 @@ Popular DBMS:
 ---
 
 # Client-Server Architecture
-+---------+
-| Browser |
-+---------+
-|
-HTTP Request
-|
-v
-+---------------+
-| Web Server |
-+---------------+
-|
-Application
-|
-v
-+---------------+
-| Database |
-+---------------+
-|
-SQL Result
-|
-v
-+---------------+
-| Web Server |
-+---------------+
-|
-HTTP Response
-|
-v
-+---------+
-| Browser |
-+---------+
+# 🌐 Client–Server Architecture
 
+A simple visual representation of how a client communicates with a server over a network.
 
+---
 
+# 📖 What is Client–Server Architecture?
+
+Client–Server Architecture is a distributed computing model where:
+
+- **Client** requests services or resources.
+- **Server** processes the request.
+- The server sends back a response.
+- Communication usually occurs over protocols like **HTTP**, **HTTPS**, **FTP**, **TCP**, or **WebSocket**.
+
+---
+
+# 🏗 Basic Architecture
+
+```mermaid
+flowchart LR
+
+    A[👤 Client] -->|Request| B[(Internet / Network)]
+    B --> C[🖥 Server]
+    C -->|Response| B
+    B --> A
+```
+
+---
+
+# 🔄 Request–Response Flow
+
+```mermaid
+sequenceDiagram
+
+    participant Client
+    participant Server
+
+    Client->>Server: HTTP Request
+    Server->>Server: Process Request
+    Server-->>Client: HTTP Response
+```
+
+---
+
+# 🌍 Multiple Clients
+
+```mermaid
+flowchart TB
+
+    C1[📱 Mobile App]
+    C2[💻 Desktop App]
+    C3[🌐 Web Browser]
+
+    C1 --> S
+    C2 --> S
+    C3 --> S
+
+    S[🖥 Application Server]
+
+    S --> DB[(Database)]
+```
+
+---
+
+# 🏛 Three-Tier Client–Server Architecture
+
+```mermaid
+flowchart LR
+
+    Client[Client Layer]
+
+    App[Application Server]
+
+    Database[(Database Server)]
+
+    Client --> App
+    App --> Database
+    Database --> App
+    App --> Client
+```
+
+---
+
+# ☁ Modern Web Architecture
+
+```mermaid
+flowchart LR
+
+    User[👤 User]
+
+    Browser[🌐 Browser]
+
+    API[REST API]
+
+    Auth[Authentication]
+
+    App[Application Server]
+
+    Cache[(Redis Cache)]
+
+    DB[(Database)]
+
+    User --> Browser
+    Browser --> API
+    API --> Auth
+    API --> App
+
+    App --> Cache
+    App --> DB
+
+    Cache --> App
+    DB --> App
+
+    App --> API
+    API --> Browser
+```
+
+---
+
+# 📦 Components
+
+| Component | Description |
+|-----------|-------------|
+| Client | Initiates requests |
+| Network | Transfers data |
+| Server | Processes requests |
+| Database | Stores persistent data |
+| Cache | Speeds up responses |
+| API | Communication interface |
+| Authentication | Verifies user identity |
+
+---
+
+# 🔁 Workflow
+
+```text
+Client
+   │
+   ▼
+Send Request
+   │
+   ▼
+Network
+   │
+   ▼
+Server
+   │
+   ├── Validate Request
+   ├── Authenticate User
+   ├── Execute Business Logic
+   ├── Read/Write Database
+   │
+   ▼
+Generate Response
+   │
+   ▼
+Network
+   │
+   ▼
+Client
+```
+
+---
+
+# ✅ Advantages
+
+- Centralized data management
+- Easier maintenance
+- High scalability
+- Improved security
+- Resource sharing
+- Supports multiple clients simultaneously
+
+---
+
+# ❌ Disadvantages
+
+- Server can become a single point of failure.
+- Heavy traffic may reduce performance.
+- Requires continuous network connectivity.
+- Infrastructure costs can be high.
+
+---
+
+# 🚀 Real-World Examples
+
+- Web Applications
+- Email Systems
+- Banking Systems
+- Online Games
+- Social Media Platforms
+- Cloud Services
+- File Sharing Systems
+- Streaming Platforms
+
+---
+
+# 📚 Common Protocols
+
+| Protocol | Purpose |
+|-----------|----------|
+| HTTP | Web communication |
+| HTTPS | Secure web communication |
+| TCP | Reliable data transfer |
+| UDP | Fast data transfer |
+| FTP | File transfer |
+| SSH | Secure remote access |
+| WebSocket | Real-time communication |
+
+---
+
+# 🎯 Summary
+
+```text
+          Client
+             │
+      Request │
+             ▼
+        Internet
+             │
+             ▼
+         Server
+        /      \
+   Database   Cache
+        \      /
+         Response
+             │
+             ▼
+          Client
+```
+
+Client–Server Architecture separates the responsibilities of requesting services (client) and providing services (server), making systems more scalable, maintainable, and secure.
 ---
 
 # HTTPS
