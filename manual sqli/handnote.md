@@ -117,7 +117,6 @@ Popular DBMS:
 
 ---
 
-# Client-Server Architecture
 # 🌐 Client–Server Architecture
 
 A simple visual representation of how a client communicates with a server over a network.
