@@ -5,7 +5,9 @@
 > This document is intended **only for educational purposes** and should be used **only on systems you own or have explicit permission to test**, such as local labs, CTFs, or intentionally vulnerable applications (DVWA, OWASP Juice Shop, WebGoat, etc.).
 
 ---
-
+#personal note clear procedure only for ethical learner 
+https://docs.google.com/document/d/1PLdA3jTib0AJCpOZysyG8z4ayIjydCX_cnAegew7W8A/edit?tab=t.0
+you can request for access to learn directly
 # Useful Browser Extensions
 
 ## Google Chrome
