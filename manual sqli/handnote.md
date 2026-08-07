@@ -58,4 +58,30 @@ This handbook focuses on understanding concepts, web technologies, databases, an
 
 ---
 
-# Learning Roadmap
+
+---
+
+# What is SQL?
+
+SQL stands for
+
+Structured Query Language
+
+It is the standard language used to communicate with relational databases.
+
+SQL allows applications to:
+
+- Store data
+- Retrieve data
+- Update data
+- Delete data
+- Manage databases
+
+---
+
+# What is a Database?
+
+A database is an organized collection of information.
+
+Example:
+
