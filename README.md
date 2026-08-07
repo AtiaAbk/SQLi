@@ -194,7 +194,7 @@ This repository builds on and points to the incredible work of the **OWASP Found
 **Atia** — Cybersecurity & Systems Learner
 
 [![GitHub](https://img.shields.io/badge/GitHub-AtiaAbk-181717?style=flat&logo=github)](https://github.com/AtiaAbk)
-[![LinkedIn](https://www.linkedin.com/in/atia-sanjida-085947233/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/atia-sanjida-085947233/)
 [![Email](https://img.shields.io/badge/Email-atia.abk%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:atia.abk@gmail.com)
 
 </div>
