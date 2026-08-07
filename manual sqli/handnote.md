@@ -350,6 +350,35 @@ Client
 ```
 
 Client–Server Architecture separates the responsibilities of requesting services (client) and providing services (server), making systems more scalable, maintainable, and secure.
+
+---
+
+# HTTP
+
+HTTP stands for
+
+HyperText Transfer Protocol
+
+Used to transfer web pages and data.
+
+Common Methods
+
+GET
+
+Retrieve information.
+
+POST
+
+Send information.
+
+PUT
+
+Update information.
+
+DELETE
+
+Remove information.
+
 ---
 
 # HTTPS
