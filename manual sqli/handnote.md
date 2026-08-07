@@ -146,33 +146,6 @@ v
 +---------+
 
 
----
-
-# HTTP
-
-HTTP stands for
-
-HyperText Transfer Protocol
-
-Used to transfer web pages and data.
-
-Common Methods
-
-GET
-
-Retrieve information.
-
-POST
-
-Send information.
-
-PUT
-
-Update information.
-
-DELETE
-
-Remove information.
 
 ---
 
