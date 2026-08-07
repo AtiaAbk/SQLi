@@ -24,9 +24,7 @@ Uniform Resource Locator/ Uniform Resource Identifier
 
 [https://test.com/admin](http://test.com/admin)
 
-User: dsfhujksdfhuksdhjk
 
-Pass: dfjkljkldsjkl
 
 [Www.](http://www.johnxxiii.co.in/php/gallary.php?id=1)
 
