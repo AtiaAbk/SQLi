@@ -113,4 +113,91 @@ Popular DBMS:
 ---
 
 # Client-Server Architecture
++---------+
+| Browser |
++---------+
+|
+HTTP Request
+|
+v
++---------------+
+| Web Server |
++---------------+
+|
+Application
+|
+v
++---------------+
+| Database |
++---------------+
+|
+SQL Result
+|
+v
++---------------+
+| Web Server |
++---------------+
+|
+HTTP Response
+|
+v
++---------+
+| Browser |
++---------+
+
+
+---
+
+# HTTP
+
+HTTP stands for
+
+HyperText Transfer Protocol
+
+Used to transfer web pages and data.
+
+Common Methods
+
+GET
+
+Retrieve information.
+
+POST
+
+Send information.
+
+PUT
+
+Update information.
+
+DELETE
+
+Remove information.
+
+---
+
+# HTTPS
+
+HTTPS = HTTP Secure
+
+Adds encryption using TLS.
+
+Benefits
+
+✔ Encryption
+
+✔ Integrity
+
+✔ Authentication
+
+---
+
+# URL
+
+URL
+
+Uniform Resource Locator
+
+Example
+
 
