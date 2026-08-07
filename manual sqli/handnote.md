@@ -1,3 +1,7 @@
+
+!!!!! only for learning and educational purposes!!!
+
+
 Manual sqli 
 
 [https://chromewebstore.google.com/detail/link-gopher/bpjdkodgnbfalgghnbeggfbfjpcfamkf](https://chromewebstore.google.com/detail/link-gopher/bpjdkodgnbfalgghnbeggfbfjpcfamkf)
