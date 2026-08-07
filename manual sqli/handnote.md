@@ -1,5 +1,5 @@
 
-!!!!! only for learning and educational purposes!!!
+!!!!! only for learning and educational purposes!!!   personal note
 
 
 Manual sqli 
